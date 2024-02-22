@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
 using ScyScaff.Core.Models.Plugins;
+using ScyScaff.Docker.Enums;
 using ScyScaff.Docker.Models.Builder;
 using ScyScaff.Docker.Models.Plugins;
 
@@ -17,6 +18,7 @@ public class ELK : IGlobalWorkerPlugin, IDockerCompatible
         
         DockerComposeService elasticService = new DockerComposeService
         {
+            Type = DockerComposeServiceType.GlobalWorker,
             Image = "elasticsearch:7.9.1",
             ContainerName = "elasticsearch",
             Ports = new Dictionary<int, int?>
@@ -43,6 +45,7 @@ public class ELK : IGlobalWorkerPlugin, IDockerCompatible
         
         DockerComposeService logstashService = new DockerComposeService
         {
+            Type = DockerComposeServiceType.GlobalWorker,
             Image = "logstash:7.9.1",
             ContainerName = "logstash",
             Ports = new Dictionary<int, int?>
@@ -59,6 +62,7 @@ public class ELK : IGlobalWorkerPlugin, IDockerCompatible
         
         DockerComposeService kibanaService = new DockerComposeService
         {
+            Type = DockerComposeServiceType.GlobalWorker,
             Image = "kibana:7.9.1",
             ContainerName = "kibana",
             Ports = new Dictionary<int, int?>
