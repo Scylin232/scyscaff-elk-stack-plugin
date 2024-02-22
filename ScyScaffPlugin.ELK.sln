@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScyScaffPlugin.ELK", "ScyScaffPlugin.ELK.csproj", "{CC0777EA-0CA4-45D0-8D4A-1E7F5ECAF024}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScyScaff.Core", "..\ScyScaff\ScyScaff.Core\ScyScaff.Core.csproj", "{3C9D7278-AEE7-4EFE-85A2-CE6A22A4B6F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScyScaff.Docker", "..\ScyScaff\ScyScaff.Docker\ScyScaff.Docker.csproj", "{58ACF64C-5D96-4C9A-A964-9AE9CBA76B01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC0777EA-0CA4-45D0-8D4A-1E7F5ECAF024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC0777EA-0CA4-45D0-8D4A-1E7F5ECAF024}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC0777EA-0CA4-45D0-8D4A-1E7F5ECAF024}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC0777EA-0CA4-45D0-8D4A-1E7F5ECAF024}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C9D7278-AEE7-4EFE-85A2-CE6A22A4B6F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C9D7278-AEE7-4EFE-85A2-CE6A22A4B6F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C9D7278-AEE7-4EFE-85A2-CE6A22A4B6F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C9D7278-AEE7-4EFE-85A2-CE6A22A4B6F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58ACF64C-5D96-4C9A-A964-9AE9CBA76B01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58ACF64C-5D96-4C9A-A964-9AE9CBA76B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58ACF64C-5D96-4C9A-A964-9AE9CBA76B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58ACF64C-5D96-4C9A-A964-9AE9CBA76B01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

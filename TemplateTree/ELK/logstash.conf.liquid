@@ -1,0 +1,14 @@
+input {
+    http {
+        codec => json
+    }
+}
+
+output {
+    elasticsearch {
+        hosts => "elasticsearch:9200"
+        index => "logstash-%{+YYYY.MM.dd}"
+        user => "elastic"
+        password => "password"
+    }
+}
