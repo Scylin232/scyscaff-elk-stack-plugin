@@ -6,7 +6,7 @@ using ScyScaff.Docker.Models.Plugins;
 
 namespace ScyScaffPlugin.ELK;
 
-public class ELK : IGlobalWorkerPlugin, IDockerCompatible
+public class ELK : IGlobalWorkerTemplatePlugin, IDockerCompatible
 {
     public string GlobalWorkerName { get; } = "elk";
     
