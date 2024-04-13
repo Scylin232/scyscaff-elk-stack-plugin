@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using ScyScaff.Core.Models.Parser;
 using ScyScaff.Core.Models.Plugins;
 using ScyScaff.Docker.Enums;
 using ScyScaff.Docker.Models.Builder;
@@ -12,7 +13,7 @@ public class ELK : IGlobalWorkerTemplatePlugin, IDockerCompatible
     
     public string GetTemplateTreePath() => Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)!, "TemplateTree\\");
 
-    public IEnumerable<DockerComposeService> GetComposeServices(string projectName, string serviceName, int serviceIndex)
+    public IEnumerable<DockerComposeService> GetComposeServices(string projectName, ScaffolderService? service, string serviceName, int serviceIndex)
     {
         List<DockerComposeService> dockerComposeServices = new();
         
