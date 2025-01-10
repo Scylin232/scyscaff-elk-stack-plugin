@@ -1,0 +1,4 @@
+{
+	"PluginType": "GlobalWorkerPlugin",
+	"ExecutablePath": "./ScyScaffPlugin.ELK.dll"
+}
